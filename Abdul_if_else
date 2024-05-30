@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp22
+{
+    internal class evenodd
+    {
+        public static void Main()
+        {
+            Console.WriteLine("enter a value");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter b value");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (b == 0)
+            {
+                Console.WriteLine("you have entered input as zero\n" +
+                    "so please enter other input greater than 0");
+                b=Convert.ToInt32(Console.ReadLine());
+                if(a%b == 0)
+                {
+                    Console.WriteLine("a is divisible by b");
+                }
+                else
+                {
+                    Console.WriteLine("a is not divisible by b");
+                }
+            }
+        }
+    }
+}
